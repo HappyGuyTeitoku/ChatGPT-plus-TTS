@@ -3,12 +3,17 @@ public class main {
         UserInterface UI = new UserInterface();
 
         UI.WelcomeScreen();
+
+        String OpenAPIKey = APIKeyReader.getOpenAPIKey();
+        String GoogleAPIKey = APIKeyReader.getGoogleAPIKey();
+
         String prompt = "";
+                
         while(!prompt.equals("quit")){
             prompt = UI.getInput().toLowerCase();
         }
     }
 
-    
+
 
 }
